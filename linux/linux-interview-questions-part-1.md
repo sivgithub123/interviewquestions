@@ -90,6 +90,7 @@ In summary, the permission mode 0750 allows the owner to read, write, and execut
 
 * What does CTRL-c do?
   - send a SIGINT to the terminal (it's a polite kill)
+  - Signal Interrupt, is a signal sent by the operating system to a process to interrupt its execution.
 
 * What is in /etc/services?
   - A mapping for services and ports, when a service call a function getportbyname() usually this function goes in this file to check.
