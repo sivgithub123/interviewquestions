@@ -54,6 +54,16 @@
 * What does ```chmod +x FILENAME```do?
   - Add a execute permission to a file for all users
 
+Setuid (SUID):
+  When the setuid (SUID) bit is set on an executable file, the user who executes the file temporarily gains the privileges of the file's owner while executing it.
+  This allows users to perform tasks that require elevated privileges without needing to escalate their own permissions.
+
+Setgid (SGID):
+  When the setgid (SGID) bit is set on an executable file, the user who executes the file temporarily becomes a member of the group that owns the file while executing it.
+  This allows users to access files or resources that are shared among a specific group of users without needing to permanently change their group membership.
+
+In summary, the permission mode 0750 allows the owner to read, write, and execute the file or directory, the group to read and execute it, and others have no permissions. This mode does not include any special permissions like setuid, setgid, or the sticky bit.
+
 * What does the permission 0750 on a file mean?
   - Add a permission to the owner of the file write, execute and read, the group of the owner execute and read, and others do nothing
 
