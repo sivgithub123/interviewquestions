@@ -107,6 +107,29 @@ In summary, the permission mode 0750 allows the owner to read, write, and execut
 
 * What is the difference between UNIX and Linux.
   - Linux it's a UNIX "clone" using the same POSIX(Portable Operating System Interface) standards, but UNIX it's a brand, has different copyrights and tools.
+ 
+    Origin and Licensing:
+        UNIX: Developed in the late 1960s and early 1970s at Bell Labs by Ken Thompson, Dennis Ritchie, and others. UNIX is not a single operating system but a family of operating systems that adhere to certain standards. Various versions of UNIX have been developed, including commercial variants like Sun Solaris, IBM AIX, and HP-UX.
+        Linux: Created in 1991 by Linus Torvalds, a Finnish software engineer. Linux is an open-source operating system kernel that is freely available and distributed under the GNU General Public License (GPL). It was inspired by UNIX but not based on any specific UNIX system.
+
+    Kernel:
+        UNIX: Different UNIX variants have their own kernels, which may vary significantly in design and functionality.
+        Linux: Linux is a specific kernel that is commonly used with a wide range of operating system distributions (distros). These Linux distros combine the Linux kernel with various software packages to create complete operating systems suitable for different purposes.
+
+    Development and Community:
+        UNIX: Historically, UNIX systems were developed and maintained by large corporations and organizations. There is no single entity responsible for UNIX development.
+        Linux: Linux development is decentralized and relies on collaboration from a global community of developers. There are many contributors, including individuals, companies, and organizations, who work together to improve and maintain the Linux kernel and associated software.
+
+    Compatibility and Standards:
+        UNIX: The various UNIX variants may adhere to certain industry standards, such as the Single UNIX Specification (SUS), but there can be differences between implementations.
+        Linux: While Linux is not officially certified as UNIX, it aims to be POSIX-compliant (Portable Operating System Interface), which ensures compatibility with UNIX-like systems. Many Linux distros also adhere to standards set by organizations like the Linux Foundation.
+
+    Market Presence:
+        UNIX: Historically, UNIX was widely used in enterprise environments, particularly in the 1980s and 1990s. However, its market share has declined over time due to factors like licensing costs and the rise of Linux.
+        Linux: Linux has gained popularity in various domains, including servers, embedded systems, cloud computing, and mobile devices. It is widely used by both individuals and organizations, including many large tech companies.
+
+
+
 
 * What is the diference between Telnet and SSH?
   - SSH it's encrypted and telnet isn't.
