@@ -135,6 +135,23 @@ In summary, the permission mode 0750 allows the owner to read, write, and execut
   - SSH it's encrypted and telnet isn't.
   - Telnet can ommit authentication
   - SSH adds overhead to the bandwidth
+ 
+Telnet and SSH are both network protocols used for remote access to computers or networking devices, but they differ significantly in terms of security and functionality:
+
+    Telnet (Telecommunication Network):
+        Telnet is an older network protocol that allows users to establish a text-based, bidirectional communication session over a network.
+        It operates over TCP/IP and is typically used to access remote computers or networking devices for administrative tasks, debugging, or data transfer.
+        Telnet sessions are unencrypted, meaning that all data, including login credentials and commands, are transmitted in plain text. This lack of encryption poses a significant security risk, as sensitive information can be intercepted and viewed by attackers.
+        Due to its inherent security vulnerabilities, Telnet is not recommended for use over untrusted networks, such as the internet, and has largely been replaced by more secure protocols like SSH.
+
+    SSH (Secure Shell):
+        SSH is a secure network protocol used for establishing encrypted connections between a client and a server over a network.
+        It provides a secure alternative to Telnet by encrypting all data transmitted between the client and server, including login credentials, commands, and data transfers.
+        SSH supports various authentication methods, including password-based authentication, public-key authentication, and multi-factor authentication, enhancing security and access control.
+        SSH is widely used for remote administration, file transfer, and tunneling services securely over the internet and other untrusted networks.
+        In addition to providing secure remote access, SSH also supports features such as port forwarding, X11 forwarding, and secure file transfer (SFTP) for enhanced functionality.
+
+In summary, while both Telnet and SSH provide remote access capabilities, SSH is the preferred choice for secure remote access due to its encryption and authentication mechanisms. Telnet, on the other hand, lacks encryption and poses security risks, making it unsuitable for use over untrusted networks.
 
 * Explain the three load averages and what do they indicate. What command can be used to view the load averages?
   - The three load averages indicate the processor usage estimated in 1 minute, estimated in 5 minutes and 15 minutes.
