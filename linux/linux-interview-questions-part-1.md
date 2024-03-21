@@ -236,7 +236,10 @@ In summary, while both Telnet and SSH provide remote access capabilities, SSH is
   - It's a permission bit that is set on a file or a directory  that let only the owner of the file/directory or the root user to delete or rename the file.
 
 * What does the immutable bit do to a file?
-  - It makes the file immutable, any user can change the state of the file or create hard links.
+  - ~~It makes the file immutable, any user can change the state of the file or create hard links.~~  
+  - The purpose of setting the immutable bit is to provide a high level of protection against accidental or malicious modifications to critical files. It is commonly used as a security feature to safeguard important system files, configuration files, or log files from unauthorized changes.
+  
+    
 
 * What is the difference between hardlinks and symlinks? What happens when you remove the source to a symlink/hardlink?
   - All files in the linux filesystem are a link to a inode, a hard link is a new link to the same inode (if you remove or rename the old or the new link, the file will be intact, but any change in the data on the inode is reflected in all files that refer to that inode), the file system will only delete the inode if you don't have any link for this inode. Because of this characteristic a hardlink only works on files that are in the same file system.
