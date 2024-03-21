@@ -258,8 +258,10 @@ In summary, while both Telnet and SSH provide remote access capabilities, SSH is
 
 * What is the difference between hardlinks and symlinks? What happens when you remove the source to a symlink/hardlink?
   - All files in the linux filesystem are a link to a inode, a hard link is a new link to the same inode (if you remove or rename the old or the new link, the file will be intact, but any change in the data on the inode is reflected in all files that refer to that inode), the file system will only delete the inode if you don't have any link for this inode. Because of this characteristic a hardlink only works on files that are in the same file system.
+  - ln /path/to/originalfile /path/to/hardlink
 
   - A softlink, it's a link that points the link from the inode, so it's a link from a link if the first link change the name or be deleted, the soft link will break, but can be used between differents filesystems.
+  - ln -s /path/to/originalfile /path/to/symlink
 
 * What is an inode and what fields are stored in an inode?
   - Each object in the filesystem is represented by a inode that stores all the information about the file, like file type, permissions, owner, group, file size, file access, change and modification time (never birth time), file deletion time, number of links, extended attributes. Each inode has a unique number and it can acessed using ``` stat filename ``` 
