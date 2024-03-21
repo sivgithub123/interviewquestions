@@ -181,7 +181,22 @@ In summary, while both Telnet and SSH provide remote access capabilities, SSH is
 
  * ```cut```
    - cut is a command for text processing and extracts a portion of a text
-
+   - cut -d ',' -f 1,3 data.txt
+   - cut -c 1-4 data.txt
+    ~$ cut -d ',' -f 1,3 data.txt
+    Name, Gender
+    John, Male
+    Emily, Female
+    Michael, Male
+    Sarah, Female
+    
+    ~$ cut -c 1-4 data.txt
+    Name
+    John
+    Emil
+    Mich
+    Sara  
+  
  * ```tac```
   - tac it's a reverse cat, pritting the file bottom to up.
 
