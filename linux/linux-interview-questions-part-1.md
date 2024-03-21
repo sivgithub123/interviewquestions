@@ -50,7 +50,14 @@
 
 * What Unix/Linux commands will alter a files ownership, files permissions?
   - chmod, chown, chattr
+Attributes List: Here are some common attributes that can be manipulated using chattr:
 
+    a - Append only: Allows appending to the file, but not modifying or deleting it.
+    i - Immutable: Prevents modification, deletion, or renaming of the file.
+    d - No dump: Prevents the file from being included in backups.
+    u - Undeletable: Allows the file to be deleted, but its content remains accessible until the system is rebooted.
+
+      
 * What does ```chmod +x FILENAME```do?
   - Add a execute permission to a file for all users
 
