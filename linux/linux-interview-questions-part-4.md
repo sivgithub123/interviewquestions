@@ -89,6 +89,10 @@ $ find /folder -size +204800 -mtime +90 -exec rm {} \;
 ```
 ### 6. Reverse the words in a sentence
 ```bash
+s1=''
+for i in `echo "Have a good day"`; do s1="$i $s1"; done
+```
+```bash
 $  echo "Have a good day" | awk '{ for(i=0;i<NF;++i){ x=NF-i; printf "%s ",$x;}  }'    
 ```
 **Output:** day good a Have
