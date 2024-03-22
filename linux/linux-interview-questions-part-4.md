@@ -112,6 +112,9 @@ ABCDEFGH
 ```
 123456789X
 ```
+```
+grep -E '[[:alpha:]]' input.txt | grep -E '[[:digit:]]' | sort -u
+```
 ```bash
 $ vi script.sh
 
@@ -163,6 +166,11 @@ category1 - 1200
 category2 - 600
 category3 - 300
 ```
+
+```
+awk -F',' '{sum[$2] += $3} END {for (i in sum) print i, sum[i] }' input.txt
+```
+
 ```bash
 $ vi script.sh
 
